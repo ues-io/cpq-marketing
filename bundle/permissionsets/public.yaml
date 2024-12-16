@@ -1,0 +1,20 @@
+name: public
+named: {}
+views:
+  demo/cpq.footer: true
+  demo/cpq.header: true
+  demo/cpq.home: true
+collections: {}
+routes:
+  demo/cpq.home: true
+files: {}
+bots: {}
+integrationActions: {}
+allowallbots: false
+allowallcollections: false
+allowallviews: false
+allowallroutes: false
+allowallfiles: true
+allowallintegrationactions: false
+modifyallrecords: false
+viewallrecords: false
