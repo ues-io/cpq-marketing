@@ -1,0 +1,12 @@
+name: demo/cpq
+homeRoute: demo/cpq.home
+publicProfile: demo/cpq.public
+dependencies:
+  uesio/core:
+    version: v0.0.1
+  uesio/ga4:
+    version: v0.0.1
+  uesio/io:
+    version: v0.0.1
+  uesio/sitekit:
+    version: v0.0.1

@@ -1,0 +1,4 @@
+name: public
+permissionSets:
+  - demo/cpq.public
+  - uesio/core.public
