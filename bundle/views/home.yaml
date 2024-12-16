@@ -1,67 +1,176 @@
 name: home
 definition:
-  wires:
+  # Wires connect to data in collections
+  wires: # Components determine the layout and composition of your view
   components:
     - uesio/io.viewlayout:
-        uesio.variant: demo/cpq.page
+        uesio.variant: ""
+        content:
+          - uesio/io.box:
+              uesio.styleTokens:
+                root:
+                  - from-indigo-700
+                  - to-violet-600
+                  - bg-gradient-to-br
+                  - py-40
+              components:
+                - uesio/io.box:
+                    uesio.variant: ""
+                    components:
+                      - uesio/io.box:
+                          uesio.styleTokens:
+                            root:
+                              - grid
+                              - md:grid-cols-2
+                              - grid-cols-1
+                          components:
+                            - uesio/io.box:
+                                uesio.variant: uesio/crmsite.textsection
+                                components:
+                                  - uesio/io.box:
+                                      components:
+                                        - uesio/io.text:
+                                            uesio.styleTokens:
+                                              root:
+                                                - md:text-[6cqw]
+                                                - text-5xl
+                                                - text-white
+                                                - font-bold
+                                                - leading-tight
+                                                - md:leading-tight
+                                                - tracking-wide
+                                                - mb-8
+                                            text: CPQ - Easy configurable quoting.
+                                            element: div
+                                            uesio.variant: ""
+                                        - uesio/io.button:
+                                            uesio.variant: uesio/sitekit.primary_nofill
+                                            text: BOOK A DEMO
+                                            signals:
+                                              - signal: route/REDIRECT
+                                                path: https://meetings.hubspot.com/mark2527
+                                                newtab: true
+                                        - uesio/io.text:
+                                            text: Manage your quoting system with your own lists of articles and their dependencies. Invite your dealers to your private platform and grant them with their own login for building our complicated quotes, duplicating them, customizing them even further and turn quotes into orders faster and accurately seamlessly configured for matching products.
+                                            element: div
+                                            align: left
+                                            uesio.variant: uesio/sitekit.hero_subtitle
+                                            uesio.styleTokens:
+                                              root:
+                                                - text-indigo-100
+                                                - pt-10
+                                                - pb-10
+                            - uesio/io.box:
+                                uesio.styleTokens:
+                                  root:
+                                    - grid
+                                    - items-center
+                                    - justify-center
+                                    - mt-[18cqw]
+                                    - mb-[28cqw]
+                                    - md:my-0
+                                components:
+                                  - uesio/io.image:
+                                      file: demo/cpq.ipad_pic
+                                      uesio.styleTokens:
+                                        root:
+                                          - scale-[1.9]
+                                          - md:translate-x-1/4
+                - uesio/io.box:
+                    uesio.variant: ""
+                    components:
+                      - uesio/io.box:
+                          uesio.variant: ""
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/sitekit.hero_title
+                                text: Straightforward CPQ backed by the powerful ues.io platform.
+                                element: div
+                                align: left
+                                color: ""
+                            - uesio/io.text:
+                                text: • Work with your existing products and create an easily configurable quoting system.
+                                uesio.variant: uesio/sitekit.hero_subtitle
+                                color: ""
+                                element: div
+                                align: left
+                                uesio.styleTokens:
+                                  root:
+                                    - pt-4
+                            - uesio/io.text:
+                                text: "• Link products to sub-products and their variances to ensure quotes are configured correctly. "
+                                uesio.variant: uesio/sitekit.hero_subtitle
+                                color: ""
+                                element: div
+                                align: left
+                                uesio.styleTokens:
+                                  root: []
+                            - uesio/io.text:
+                                text: • Manage all your users and customers with a highly reliable and secure platform.
+                                uesio.variant: uesio/sitekit.hero_subtitle
+                                color: ""
+                                element: div
+                                align: left
+                                uesio.styleTokens:
+                                  root: []
+                    swap: true
+                    leftBackground: sky-200
+                    rightBackground: sky-300
+                    right:
+                      - uesio/io.image:
+                          file: uesio/crmsite.mockup_opp_details
+                          uesio.variant: uesio/crmsite.splithero
+                          uesio.styleTokens:
+                            root:
+                              - md:-translate-x-1/3
+                    left:
+                      - uesio/io.box:
+                          uesio.variant: uesio/crmsite.textsection
+                          uesio.styleTokens:
+                            root:
+                              - ml-0
+                          components:
+                            - uesio/io.text:
+                                uesio.variant: uesio/crmsite.subheader
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sky-500
+                                text: Opportunities
+                                element: div
+                            - uesio/io.text:
+                                uesio.variant: uesio/crmsite.halfhero
+                                text: Track deals from start to closed.
+                            - uesio/io.text:
+                                uesio.variant: uesio/crmsite.herosubtext
+                                text: Struggling to keep tabs on your sales pipeline? Close deals faster. ues.io CRM tracks every step of the sales journey, from initial contact to closed deals.  Stop juggling spreadsheets and focus on closing deals.
+                                uesio.styleTokens:
+                                  root:
+                                    - text-sky-700
+                            - uesio/io.box:
+                                components:
+                                  - uesio/io.button:
+                                      text: Get Started for Free
+                                      uesio.variant: uesio/sitekit.primary_dark
+                                      signals:
+                                        - signal: route/NAVIGATE
+                                          path: getstarted
+                    uesio.styleTokens:
+                      root:
+                        - bg-white
+                        - p-10
+                        - flex
+                        - w-screen
+              uesio.variant: uesio/sitekit.section
         header:
           - uesio/core.view:
               view: demo/cpq.header
-        content:
-          - uesio/sitekit.section_hero:
-              title: "Streamline Your Sales Process with cpq"
-              subtitle: "Powerful CPQ software built on ues.io"
-              actions:
-                - uesio/io.button:
-                    uesio.variant: uesio/sitekit.primary_dark
-                    text: Get Started
-                - uesio/io.button:
-                    uesio.variant: uesio/sitekit.secondary_dark
-                    text: Learn more
-          - uesio/io.box:
-              components:
-                - uesio/sitekit.section_feature:
-                    title: Streamlined Quoting
-                    subtitle: Fast and Accurate
-                    description: Our CPQ software makes it easy to generate professional quotes in minutes, with real-time pricing and product configuration.
-                - uesio/sitekit.section_feature:
-                    title: Guided Selling
-                    subtitle: Intelligent Recommendations
-                    description: Our guided selling tools provide intelligent product recommendations to help your sales team close more deals.
-                - uesio/sitekit.section_feature:
-                    title: Powerful Analytics
-                    subtitle: Data-Driven Insights
-                    description: Gain valuable insights into your sales pipeline and customer behavior with our robust reporting and analytics features.
-          - uesio/sitekit.section_testimonial:
-              quote: cpq is the best CPQ software I've used. It's easy to use and has saved us so much time and money.
-              name: Sarah Lee
-              title: Sales Consultant, Acme Inc.
-              avatar: uesio/sitekit.avatarpics
-              avatarPath: images/randy_billingston.jpg
-          - uesio/sitekit.section:
-              innerVariant: uesio/sitekit.section_inner_content_three_column
-              uesio.styleTokens:
-                root:
-                  - bg-white/80
-              content:
-                - uesio/sitekit.testimonial:
-                    quote: cpq has transformed our sales process, making it faster and more efficient than ever before.
-                    name: John Doe
-                    title: Sales Manager, Acme Inc.
-                    avatar: uesio/sitekit.avatarpics
-                    avatarPath: images/sandy_burtrand.jpg
-                - uesio/sitekit.testimonial:
-                    quote: The guided selling features in cpq have helped our team close more deals and increase our revenue.
-                    name: Jane Smith
-                    title: VP of Sales, Globex Corporation
-                    avatar: uesio/sitekit.avatarpics
-                    avatarPath: images/sandy_burtrand.jpg
-                - uesio/sitekit.testimonial:
-                    quote: The robust analytics in cpq have given us invaluable insights into our sales pipeline and customer behavior.
-                    name: Bob Johnson
-                    title: Director of Sales, XYZ Company
-                    avatar: uesio/sitekit.avatarpics
-                    avatarPath: images/sandy_burtrand.jpg
-        footer:
-          - uesio/core.view:
-              view: demo/cpq.footer
+        uesio.styleTokens:
+          header:
+            - sticky
+            - z-10
+            - top-0
+            - bg-white
+          root:
+            - mt-2
+    - uesio/core.view:
+        view: demo/cpq.footer
