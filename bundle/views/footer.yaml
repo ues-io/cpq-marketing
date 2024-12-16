@@ -18,3 +18,7 @@ definition:
             - p-2
             - items-center
             - justify-center
+        signals:
+          - signal: route/REDIRECT
+            newtab: true
+            path: https://ues.io

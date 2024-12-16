@@ -29,7 +29,7 @@ definition:
                     signals:
                       - signal: route/REDIRECT
                         newtab: true
-                        path: https://demo-cpq-prod.ues.io/home
+                        path: https://demo-kyc-prod.ues.io/home
                     icon: ""
                     uesio.styleTokens:
                       root:
