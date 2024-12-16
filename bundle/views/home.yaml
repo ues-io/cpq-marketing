@@ -51,7 +51,7 @@ definition:
                                                 path: https://meetings.hubspot.com/mark2527
                                                 newtab: true
                                         - uesio/io.text:
-                                            text: Manage your quoting system with your own lists of articles and their dependencies. Invite your dealers to your private platform and grant them with their own login for building our complicated quotes, duplicating them, customizing them even further and turn quotes into orders faster and accurately seamlessly configured for matching products.
+                                            text: Manage your quoting system with your own lists of articles and their dependencies. Invite your dealers to your private platform and grant them with their own login for building out complicated quotes, duplicating them, customizing them even further and turn quotes into orders faster, accurately and seamlessly configured for matching products.
                                             element: div
                                             align: left
                                             uesio.variant: uesio/sitekit.hero_subtitle
@@ -96,7 +96,7 @@ definition:
                                 align: left
                                 uesio.styleTokens:
                                   root:
-                                    - pt-4
+                                    - pt-6
                             - uesio/io.text:
                                 text: "• Link products to sub-products and their variances to ensure quotes are configured correctly. "
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -104,7 +104,8 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
                             - uesio/io.text:
                                 text: • Manage all your users and customers with a highly reliable and secure platform.
                                 uesio.variant: uesio/sitekit.hero_subtitle
@@ -112,7 +113,8 @@ definition:
                                 element: div
                                 align: left
                                 uesio.styleTokens:
-                                  root: []
+                                  root:
+                                    - pt-4
                     swap: true
                     leftBackground: sky-200
                     rightBackground: sky-300
@@ -159,6 +161,18 @@ definition:
                         - bg-white
                         - p-10
                         - flex
+                        - w-screen
+                - uesio/io.box:
+                    components:
+                      - uesio/sitekit.section_testimonial:
+                          quote: ues.io's manufacturing solutions have transformed our operations. We've improved efficiency, b2b services and increased production.
+                          avatar: demo/cpq.morandi
+                          name: Matti Morandi
+                          title: Plant Owner, Storenfabrik LLC
+                    uesio.variant: ""
+                    uesio.styleTokens:
+                      root:
+                        - bg-white
                         - w-screen
               uesio.variant: uesio/sitekit.section
         header:
