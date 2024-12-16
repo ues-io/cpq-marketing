@@ -1,0 +1,67 @@
+name: home
+definition:
+  wires:
+  components:
+    - uesio/io.viewlayout:
+        uesio.variant: demo/cpq.page
+        header:
+          - uesio/core.view:
+              view: demo/cpq.header
+        content:
+          - uesio/sitekit.section_hero:
+              title: "Streamline Your Sales Process with cpq"
+              subtitle: "Powerful CPQ software built on ues.io"
+              actions:
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.primary_dark
+                    text: Get Started
+                - uesio/io.button:
+                    uesio.variant: uesio/sitekit.secondary_dark
+                    text: Learn more
+          - uesio/io.box:
+              components:
+                - uesio/sitekit.section_feature:
+                    title: Streamlined Quoting
+                    subtitle: Fast and Accurate
+                    description: Our CPQ software makes it easy to generate professional quotes in minutes, with real-time pricing and product configuration.
+                - uesio/sitekit.section_feature:
+                    title: Guided Selling
+                    subtitle: Intelligent Recommendations
+                    description: Our guided selling tools provide intelligent product recommendations to help your sales team close more deals.
+                - uesio/sitekit.section_feature:
+                    title: Powerful Analytics
+                    subtitle: Data-Driven Insights
+                    description: Gain valuable insights into your sales pipeline and customer behavior with our robust reporting and analytics features.
+          - uesio/sitekit.section_testimonial:
+              quote: cpq is the best CPQ software I've used. It's easy to use and has saved us so much time and money.
+              name: Sarah Lee
+              title: Sales Consultant, Acme Inc.
+              avatar: uesio/sitekit.avatarpics
+              avatarPath: images/randy_billingston.jpg
+          - uesio/sitekit.section:
+              innerVariant: uesio/sitekit.section_inner_content_three_column
+              uesio.styleTokens:
+                root:
+                  - bg-white/80
+              content:
+                - uesio/sitekit.testimonial:
+                    quote: cpq has transformed our sales process, making it faster and more efficient than ever before.
+                    name: John Doe
+                    title: Sales Manager, Acme Inc.
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/sandy_burtrand.jpg
+                - uesio/sitekit.testimonial:
+                    quote: The guided selling features in cpq have helped our team close more deals and increase our revenue.
+                    name: Jane Smith
+                    title: VP of Sales, Globex Corporation
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/sandy_burtrand.jpg
+                - uesio/sitekit.testimonial:
+                    quote: The robust analytics in cpq have given us invaluable insights into our sales pipeline and customer behavior.
+                    name: Bob Johnson
+                    title: Director of Sales, XYZ Company
+                    avatar: uesio/sitekit.avatarpics
+                    avatarPath: images/sandy_burtrand.jpg
+        footer:
+          - uesio/core.view:
+              view: demo/cpq.footer
