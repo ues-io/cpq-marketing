@@ -76,6 +76,20 @@ definition:
                                         root:
                                           - scale-[1.9]
                                           - md:translate-x-1/4
+              uesio.variant: uesio/sitekit.section
+        header:
+          - uesio/core.view:
+              view: demo/cpq.header
+        uesio.styleTokens:
+          header:
+            - sticky
+            - z-10
+            - top-0
+            - bg-white
+          root: []
+        right:
+          - uesio/io.box:
+              components:
                 - uesio/io.box:
                     uesio.variant: ""
                     components:
@@ -115,6 +129,11 @@ definition:
                                 uesio.styleTokens:
                                   root:
                                     - pt-4
+                            - uesio/sitekit.section_testimonial:
+                                quote: ues.io's manufacturing solutions have transformed our operations. We've improved efficiency, b2b services and increased production.
+                                avatar: demo/cpq.morandi
+                                name: Matti Morandi
+                                title: Plant Owner, Storenfabrik LLC
                     swap: true
                     leftBackground: sky-200
                     rightBackground: sky-300
@@ -162,28 +181,10 @@ definition:
                         - p-10
                         - flex
                         - w-screen
-                - uesio/io.box:
-                    components:
-                      - uesio/sitekit.section_testimonial:
-                          quote: ues.io's manufacturing solutions have transformed our operations. We've improved efficiency, b2b services and increased production.
-                          avatar: demo/cpq.morandi
-                          name: Matti Morandi
-                          title: Plant Owner, Storenfabrik LLC
-                    uesio.variant: ""
-                    uesio.styleTokens:
-                      root:
-                        - bg-white
-                        - w-screen
-              uesio.variant: uesio/sitekit.section
-        header:
-          - uesio/core.view:
-              view: demo/cpq.header
-        uesio.styleTokens:
-          header:
-            - sticky
-            - z-10
-            - top-0
-            - bg-white
-          root: []
+              uesio.variant: ""
+              uesio.styleTokens:
+                root:
+                  - bg-white
+                  - w-screen
     - uesio/core.view:
         view: demo/cpq.footer
