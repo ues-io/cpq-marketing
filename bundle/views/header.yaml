@@ -141,14 +141,14 @@ definition:
                   text: Sales
                   signals:
                     - signal: route/REDIRECT
-                      path: https://docs.ues.io/crm
+                      path: https://crm.ues.io/home
                       newtab: true
               - uesio/io.button:
                   uesio.variant: uesio/sitekit.primary_dark
                   text: Marketing
                   signals:
                     - signal: route/REDIRECT
-                      path: https://demo-kyc-prod.ues.io/home
+                      path: https://demo-blog-prod.ues.io/home
                       newtab: true
               - uesio/io.button:
                   uesio.styleTokens:
